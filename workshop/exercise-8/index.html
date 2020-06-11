@@ -1,23 +1,79 @@
-<h1>Registration Form</h1>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
 <form>
     <label>Username:</label>
+    <input type="username" required />
     <label>password</label>
-    <label>email</label>
-
+    <input type="password" required />
+    <div>
+        <label>Email</label>
+        <input type="email" required />
+    </div>
+<div>
+    <div>
     <p>Which taxi do you require?</p>
-    <select>
-        <option value = "Car">Car</option>
-        <option value = "Van">Van</option>
-        <option value = "Tuk Tuk">Tuk Tuk</option>
-    </select>
+    </div>
+    <div>
+        <label>
+    <input type="radio" required /> Car
+    </label>
+    </div>
+    <div>
+        <label>
+    <input type="radio" required /> Van
+    </label>
+    </div>
+    <div>
+        <label>
+    <input type="radio" required /> Tuk Tuk
+    </label>
+    </div>
+</div>
+<div>
     <p>Extras</p>
+    <div>
+        <label>
+    <input type="checkbox" required /> Baby Seat
+    </label>
+    </div>
+    <div>
+        <label>
+    <input type="checkbox" required /> Wheelchair Access
+    </label>
+    </div>
+    <div>
+        <label>
+    <input type="checkbox" required /> Stock Tip
+    </label>
+    </div>
+</div>
+<div>
+    <label>Pickup 
+    
     <select>
-        <option value = "Baby Seat">Baby Seat</option>
-        <option value = "Wheelchair Access">Wheelchair Access</option>
-        <option value = "Stock Tip">Stock Tip</option>
+        <option selected="selected">Select One</option>
+        <option>Taxi Office</option>
+        <option>Town Hall</option>
+        <option>We'll Guess!</option>
     </select>
-
+    </label>
+</div>
+<div>
+    <label> Special 
+    <textarea></textarea>
+    </label>
+</div>
+<button>Submit</button>
+</form>
     <textarea>Special</textarea>
 <input type="submit" value="Submit">
 </form>
+
+</body>
+</html>
